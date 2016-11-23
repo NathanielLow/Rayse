@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CalendarFragment">
+    <item
+        android:id="@+id/calendar_toggleLabel"
+        android:title="toggle:"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/calendar_toggleMe"
+        android:title="me"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/calendar_toggleLight"
+        android:title="light"
+        app:showAsAction="always|withText"/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>

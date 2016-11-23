@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.rayse.TutorialActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:id="@+id/dot_indicators"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/dot1"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/selected_dot"/>
+
+            <ImageView
+                android:id="@+id/dot2"
+                android:layout_marginLeft="5dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/empty_dot"/>
+
+            <ImageView
+                android:id="@+id/dot3"
+                android:layout_marginLeft="5dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/empty_dot"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/dot_indicators"
+            android:background="@color/orange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+
+            <View
+                android:id="@+id/center_placeholder"
+                android:layout_centerInParent="true"
+                android:layout_width="5dp"
+                android:layout_height="30dp"
+                android:background="@color/orange" />
+
+            <Button
+                android:id="@+id/signUpButton"
+                android:layout_toLeftOf="@id/center_placeholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SIGN UP"
+                android:textColor="@color/white"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:background="@color/orange"
+                android:onClick="signup"
+                style="?android:attr/borderlessButtonStyle"/>
+
+            <Button
+                android:id="@+id/signInButton"
+                android:layout_toRightOf="@id/center_placeholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SIGN IN"
+                android:textColor="@color/white"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:background="@color/orange"
+                android:onClick="signin"
+                style="?android:attr/borderlessButtonStyle"/>
+
+            <View
+                android:id="@+id/vertical_divider"
+                android:layout_centerInParent="true"
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:background="@color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

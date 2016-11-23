@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SunProgressView">
+        <attr name="centerX" format="integer" />
+        <attr name="centerY" format="integer" />
+        <attr name="radius" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="RayseTextView">
+        <attr name="fontName" format="string" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgPrimaryLight"
+    tools:context=".TutorialFragment$PlaceholderFragment">
+
+    <ImageView
+        android:id="@+id/watch"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/reminders_watch"/>
+
+    <com.rayse.RayseTextView
+        app:fontName="Raleway-Light.ttf"
+        android:layout_above="@id/watch"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:text="REMINDERS"
+        android:textSize="40dp"
+        android:textColor="@color/grey"/>
+
+
+
+    <com.rayse.RayseTextView
+        app:fontName="Raleway-Light.ttf"
+        android:id="@+id/blurb"
+        android:layout_below="@id/watch"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="get reminded when you need more light and get congratulated when you reach your goals"
+        android:textColor="@color/grey"/>
+
+</RelativeLayout>

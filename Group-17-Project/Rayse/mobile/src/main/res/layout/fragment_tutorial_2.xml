@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgPrimary"
+    tools:context=".TutorialFragment$PlaceholderFragment"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/watch"
+        android:layout_centerInParent="true"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tracking_watch"/>
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_above="@id/watch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/white_arrow"/>
+
+    <ImageView
+        android:layout_alignEnd="@id/arrow"
+        android:layout_above="@id/arrow"
+        android:layout_marginTop="20dp"
+        android:layout_width="72dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logo"
+        android:layout_weight="0.07" />
+
+
+    <com.rayse.RayseTextView
+        app:fontName="Raleway-Light.ttf"
+        android:id="@+id/blurb"
+        android:layout_below="@id/watch"
+        android:layout_centerHorizontal="true"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="track the amount of light you are exposed to during the day"
+        android:textColor="@color/grey"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

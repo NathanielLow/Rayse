@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Goals: Minutes of sunlight per day"
+        android:key="goals">
+        <CheckBoxPreference
+            android:key="use_varying_goals"
+            android:title="Different goal amount each day"
+            android:summary="Leave unchecked to use the same goal amount"
+            android:defaultValue="false" />
+        <EditTextPreference
+            android:defaultValue="30"
+            android:summary="30 minutes"
+            android:key="global_goal"
+            android:title="Global goal"
+            android:inputType="number" />
+        <EditTextPreference
+            android:dependency="use_varying_goals"
+            android:defaultValue="30"
+            android:summary="30 minutes"
+            android:key="day_sun_goal"
+            android:title="Sunday goal"
+            android:inputType="number" />
+        <EditTextPreference
+            android:dependency="use_varying_goals"
+            android:defaultValue="30"
+            android:summary="30 minutes"
+            android:key="day_mon_goal"
+            android:title="Monday goal"
+            android:inputType="number" />
+        <EditTextPreference
+            android:dependency="use_varying_goals"
+            android:defaultValue="30"
+            android:summary="30 minutes"
+            android:key="day_tue_goal"
+            android:title="Tuesday goal"
+            android:inputType="number" />
+        <EditTextPreference
+            android:dependency="use_varying_goals"
+            android:defaultValue="30"
+            android:summary="30 minutes"
+            android:key="day_wed_goal"
+            android:title="Wednesday goal"
+            android:inputType="number" />
+        <EditTextPreference
+            android:dependency="use_varying_goals"
+            android:defaultValue="30"
+            android:summary="30 minutes"
+            android:key="day_thu_goal"
+            android:title="Thursday goal"
+            android:inputType="number" />
+        <EditTextPreference
+            android:dependency="use_varying_goals"
+            android:defaultValue="30"
+            android:summary="30 minutes"
+            android:key="day_fri_goal"
+            android:title="Friday goal"
+            android:inputType="number" />
+        <EditTextPreference
+            android:dependency="use_varying_goals"
+            android:defaultValue="30"
+            android:summary="30 minutes"
+            android:key="day_sat_goal"
+            android:title="Saturday goal"
+            android:inputType="number" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Light Sensor"
+        android:key="startend_times">
+        <CheckBoxPreference
+            android:key="use_varying_startend"
+            android:title="Different start/end time each day"
+            android:summary="Leave unchecked to use the global start/end time for each day"
+            android:defaultValue="false"/>
+        <EditTextPreference
+            android:defaultValue="8"
+            android:summary="8:00 AM"
+            android:key="global_start"
+            android:title="Global start time"
+            android:inputType="time" />
+        <EditTextPreference
+            android:defaultValue="20"
+            android:summary="8:00 PM"
+            android:key="global_end"
+            android:title="Global end time"
+            android:inputType="time" />
+        <EditTextPreference
+            android:dependency="use_varying_startend"
+            android:defaultValue="8"
+            android:summary="8:00 AM"
+            android:key="day_sun_start"
+            android:title="Sunday start time"
+            android:inputType="time" />
+        <EditTextPreference
+            android:dependency="use_varying_startend"
+            android:defaultValue="20"
+            android:summary="8:00 PM"
+            android:key="day_sun_end"
+            android:title="Sunday end time"
+            android:inputType="time" />
+        <EditTextPreference
+            android:dependency="use_varying_startend"
+            android:defaultValue="8"
+            android:summary="8:00 AM"
+            android:key="day_mon_start"
+            android:title="Monday start time"
+            android:inputType="time" />
+        <EditTextPreference
+            android:dependency="use_varying_startend"
+            android:defaultValue="20"
+            android:summary="8:00 PM"
+            android:key="day_mon_end"
+            android:title="Monday end time"
+            android:inputType="time" />
+        <EditTextPreference
+            android:dependency="use_varying_startend"
+            android:defaultValue="8"
+            android:summary="8:00 AM"
+            android:key="day_tue_start"
+            android:title="Tuesday start time"
+            android:inputType="time" />
+        <EditTextPreference
+            android:dependency="use_varying_startend"
+            android:defaultValue="20"
+            android:summary="8:00 PM"
+            android:key="day_tue_end"
+            android:title="Tuesday end time"
+            android:inputType="time" />
+        <EditTextPreference
+            android:dependency="use_varying_startend"
+            android:defaultValue="8"
+            android:summary="8:00 AM"
+            android:key="day_wed_start"
+            android:title="Wednesday start time"
+            android:inputType="time" />
+        <EditTextPreference
+            android:dependency="use_varying_startend"
+            android:defaultValue="20"
+            android:summary="8:00 PM"
+            android:key="day_wed_end"
+            android:title="Wednesday end time"
+            android:inputType="time" />
+        <EditTextPreference
+            android:dependency="use_varying_startend"
+            android:defaultValue="8"
+            android:summary="8:00 AM"
+            android:key="day_thu_start"
+            android:title="Thursday start time"
+            android:inputType="time" />
+        <EditTextPreference
+            android:dependency="use_varying_startend"
+            android:defaultValue="20"
+            android:summary="8:00 PM"
+            android:key="day_thu_end"
+            android:title="Thursday end time"
+            android:inputType="time" />
+        <EditTextPreference
+            android:dependency="use_varying_startend"
+            android:defaultValue="8"
+            android:summary="8:00 AM"
+            android:key="day_fri_start"
+            android:title="Friday start time"
+            android:inputType="time" />
+        <EditTextPreference
+            android:dependency="use_varying_startend"
+            android:defaultValue="20"
+            android:summary="8:00 PM"
+            android:key="day_fri_end"
+            android:title="Friday end time"
+            android:inputType="time" />
+        <EditTextPreference
+            android:dependency="use_varying_startend"
+            android:defaultValue="8"
+            android:summary="8:00 AM"
+            android:key="day_sat_start"
+            android:title="Saturday start time"
+            android:inputType="time" />
+        <EditTextPreference
+            android:dependency="use_varying_startend"
+            android:defaultValue="20"
+            android:summary="8:00 PM"
+            android:key="day_sat_end"
+            android:title="Saturday end time"
+            android:inputType="time" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

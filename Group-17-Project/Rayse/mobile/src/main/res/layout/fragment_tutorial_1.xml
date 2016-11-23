@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgPrimaryDark"
+    tools:context=".TutorialFragment$PlaceholderFragment">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"/>
+
+    <com.rayse.RayseTextView
+        app:fontName="Raleway-Light.ttf"
+        android:layout_above="@id/logo"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="60dp"
+        android:textColor="@color/amber"
+        android:textAlignment="center"/>
+
+
+</RelativeLayout>

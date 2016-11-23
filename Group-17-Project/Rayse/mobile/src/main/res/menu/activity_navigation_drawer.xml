@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_now"
+            android:title="@string/nav_now_title" />
+        <item
+            android:id="@+id/nav_my_calendar"
+            android:title="@string/nav_calendar_title" />
+        <item
+            android:id="@+id/nav_today"
+            android:title="@string/nav_today_title" />
+        <item
+            android:id="@+id/nav_last_week"
+            android:title="@string/nav_week_title" />
+        <item
+            android:id="@+id/nav_accomplishments"
+            android:title="@string/nav_accomplishments_title" />
+        <item
+            android:id="@+id/nav_watch_notifications"
+            android:title="@string/nav_notifications_title" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Log out" />
+    </group>
+
+</menu>

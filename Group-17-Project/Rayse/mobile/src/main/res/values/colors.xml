@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#333333</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="bgPrimary">#54A8CC</color>
+    <color name="bgPrimaryDark">#2B708D</color>
+    <color name="bgPrimaryLight">#98CDE4</color>
+    <color name="actionPrimary">#498FAD</color>
+    <color name="amber">#FFC107</color>
+    <color name="amberDark">#FFB300</color>
+    <color name="amberLight">#FFD54F</color>
+    <color name="orange">#FF9800</color>
+    <color name="orangeAlpha">#70FF9800</color>
+    <color name="white">#F2F2F2</color>
+    <color name="black">#333333</color>
+    <color name="grey">#4F4F4F</color>
+
+    <!-- calendar colors-->
+    <color name="toolbar">#efefef</color>
+    <color name="toolbar_text">#8f000000</color>
+    <color name="accent">#2789e4</color>
+</resources>

@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+
+    defaultConfig {
+        applicationId "com.rayse"
+        minSdkVersion 22
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        applicationVariants.all { variant ->
+            variant.buildConfigField "String", "PARSE_ID", "\"" + getApiKey("PARSE_ID") + "\""
+            variant.buildConfigField "String", "PARSE_CLIENT_KEY", "\"" + getApiKey("PARSE_CLIENT_KEY") + "\""
+            variant.buildConfigField "String", "DUMMY_USERNAME", "\"" + getApiKey("DUMMY_USERNAME") + "\""
+            variant.buildConfigField "String", "DUMMY_PASSWORD", "\"" + getApiKey("DUMMY_PASSWORD") + "\""
+        }
+    }
+}
+
+def getApiKey(name) {
+    def Properties props = new Properties()
+    props.load(new FileInputStream(new File('mobile/secret.properties')))
+    return props[name]
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    wearApp project(':wear')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.0.0-alpha2'
+    compile 'com.google.android.gms:play-services:8.4.0'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:support-v4:23.3.0'
+    compile 'com.parse.bolts:bolts-android:1.+'
+    compile 'com.parse:parse-android:1.+'
+    compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
+    compile 'com.github.alamkanak:android-week-view:1.2.6'
+    compile 'com.google.android.gms:play-services-ads:8.4.0'
+    compile 'com.google.android.gms:play-services-identity:8.4.0'
+    compile 'com.google.android.gms:play-services-gcm:8.4.0'
+}

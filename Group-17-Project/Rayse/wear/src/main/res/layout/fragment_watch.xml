@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/bgPrimary"
+    tools:deviceIds="wear_round"
+    android:id="@+id/fragment_now">
+
+    <com.rayse.SunProgressView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:radius="150"
+        app:centerX="150"
+        app:centerY="120"
+        android:id="@+id/progress"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layerType="software"/>
+
+    <com.rayse.RayseTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0%"
+        android:textSize="20dp"
+        android:id="@+id/now_percent"
+        android:layout_alignParentTop="@+id/now_input_percent"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"/>
+
+    <com.rayse.RayseTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/now_label"
+        android:layout_below="@id/now_percent"
+        android:text="of daily goal achieved"
+        android:textAlignment="center"
+        android:textSize="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Custom percentage"
+        android:inputType="numberDecimal"
+        android:id="@+id/now_input_percent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
